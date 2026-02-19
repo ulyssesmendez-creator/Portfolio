@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+
+<body>
+    <!--Layout for the bottom navigation bar-->
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Windows_Logo_%281992-2001%29.svg/2368px-Windows_Logo_%281992-2001%29.svg.png"
+            class="large-flag">
+        <!--<img src="https://art.pixilart.com/625a56c57730913.png" class="smallSpidey">
+            <img src="https://images3.alphacoders.com/126/1265738.png" class="city">
+            -->
+    </div>
+    <nav class="navbar">
+        <button class="start-button">
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEUAAAAAAACAAAD/AAAA/wAAgAAAAIAAAP///wCAgAD///8Zy0fQAAAAAXRSTlMAQObYZgAAAAFiS0dECmjQ9FYAAAAHdElNRQfiBhoAOBwkIrLGAAAAmUlEQVQoz7XRMQ7CMAwFUFsevNoMnMMiV+gFkDiIp+YKXdk4LnYiqEEdwdt/SuKvFuCvg6oqX3kIziw6J0Eyip6aLlfNs4KY0AKWAaAoAm+guBDvWAGL2HYAMqKES+y4DYBGZlDWgtFhj3PX7V579ICt9ngBzx5ewCP2HYCdOWGNHY8B0Nn9o4fzYY88rbXH+HClRx3BH//AJ8kFIO93liGNAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA2LTI2VDAwOjU2OjI4LTA0OjAwjfNqqgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNi0yNlQwMDo1NjoyOC0wNDowMPyu0hYAAAAASUVORK5CYII="
+                    class="small-flag">
+            </div>
+            <div class="start-word">
+                Start
+            </div>
+        </button>
+        <div class="time">
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAFVBMVEUAAAC/vwAAAACAgIDAwMD//////wBeSt57AAAAAXRSTlMAQObYZgAAAAFiS0dEBfhv6ccAAAAHdElNRQfiBhgXES2C2lBpAAAAzElEQVQoz32RSxLCIAxAU3sCKnQtYPeM6AFsLQewhgsI3v8IUvqDzmgWzOTxJpAE4EdUp/Es17xouzFXK6Dnl0rz4tGgSnKg7xsOScXCPPsMUN8uQE2CnUGpZ8HLHlGBjveEfCxGUM4v3j1OYCrILENEoTeAI5BDsxm1tTYFnvnwSjf+XYcAZmpjTASz4ahzTuoNREOIfgEFIdFYAQgRFHldfxqCByPpBeBAzCXrFjjJ5xGUKp8Y8GM+06Dspg58txc4VLvNgdjt9k98AQS0M6MCJf0BAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA2LTI0VDIzOjE3OjQ1LTA0OjAwrlSXUQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNi0yNFQyMzoxNzo0NS0wNDowMN8JL+0AAAAASUVORK5CYII="
+                    class="speaker">
+            </div>
+            <div id="current-time">
+            </div>
+        </div>
+    </nav>
+
+    <!--Layout for the windows95 desktop-->
+    <nav class="screen">
+        <a href="#" class="Bio">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEUAAACAgIDAwMAAAAD///8AgIAA//8AAIAAAP8A/wAAgACZBxulAAAAAXRSTlMAQObYZgAAAAFiS0dEBI9o2VEAAAAHdElNRQfiBBMBJCt84jxJAAAA5UlEQVQ4y62TyxHCIBCGoYQFGghJASBagJEGMk6sxbsXW/Dq0SpNsuSxPEad8ePGNz9kNwtjExwobEZoApiwz+l+tQjlCTAL3kYnfSFqt6KI6FeouJTFGQ86JKLDi2PR9x3WkIjrfeSWCuxWnQrsyumPwpVEUnlZhNamotTE38VmpohotkMyCGfywyChzgsrZHZyJVQomKNYASggpkLBfQwEEd09zugn8XguL2NArOI1i2m4dx+PUjoVJhvQFgON9GS1lcXAcU+XBlcIQBzwIVD4pPD8VdpBbHmmCJP/FyHApIvBwBu9bp7SZvn+ewAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNC0xOVQwMTozNjo0My0wNDowMNV8Hl4AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDQtMTlUMDE6MzY6NDMtMDQ6MDCkIabiAAAAAElFTkSuQmCC"
+                class="bio-icon">
+            <div>
+                Biography
+            </div>
+        </a>
+
+
+        <a href="#" class="Resume">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEUAAACGhoYiIiL/+/DAwMD4+PiAgAD//5nMzGaZmQDn59YAM5mgoKQAMzMAAAD/zJkICAgzMwD///8PLrXJAAAAAXRSTlMAQObYZgAAAAFiS0dEEnu8bAAAAAAHdElNRQfiBhgXAzXpQrjsAAABbklEQVRIx8WU63KFIAyEtVoj1rr1/V+2QAImXBztn64zRxz3I5vgnGH4N40fL/3T/IoYp+kVMX5Or4iw/xsi+W+J5dLlvyEWSlq1v0t4/8py1t8hav/2dUsstX/XNbi3BtD0B8L5l8t3BRi/ClUTDBT+XTElEYGGf7c1LFD6NxssEAZw48YKVvHP8hTlCQ24cWZ5G//kRVQkBHBPxEQE3PRAxMTBAHUFucH3yDV6AOwahAjEGhUAY+QbYRXipxcJKlG4bgGwNZfwF5DbtgCKFTIWgJsxXQ3IImRifwlkX3pKodx8nAWAEpMJxZOAO86zrgANQvXtK5wtwA6HJBC4CQHamVISNdkGoF7n/LwCagD5eNMwoQ+OehXSvqZhGykT0K2wn/stIjUHm4tAl1AAVBNpAR6TxCqA8pujnIXNpAEhQOYLJb07oQDyB5fTX/mlRq9CagN6otQA9GlRmmbam58v4NmfmVPAcD7S8Bf9AlndNmHeYjB7AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA2LTI0VDIzOjAzOjUzLTA0OjAwyUvdTwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNi0yNFQyMzowMzo1My0wNDowMLgWZfMAAAAASUVORK5CYII="
+                class="res-icon">
+            <div>
+                Resume
+            </div>
+        </a>
+
+        <a href="#" class="ParkSpace">
+            <img src="img/CarIcon.jpg" class="carImage">
+            <div>
+                ParkSpace
+            </div>
+        </a>
+
+        <a href="#" class="WordNet">
+            <img src="img/word.jpg" class="wordImage">
+            <div>
+                NGordnet
+            </div>
+        </a>
+
+        <a href="#" class="Scheme">
+            <img src="img/scheme.jpg" class="schemeImage">
+            <div>
+                Scheme
+            </div>
+        </a>
+
+        <a href="#" class="Byow">
+            <img src="img/byowEx.png" class="byowImage">
+            <div>
+                BYOW
+            </div>
+        </a>
+
+    </nav>
+
+    <!--Layout for the Biography window-->
+    <div class="bio-popup" id="bio-popup">
+        <header class="h1">
+            <nav class="top-bar">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEUAAACAgIDAwMAAAAD///8AgIAA//8AAIAAAP8A/wAAgACZBxulAAAAAXRSTlMAQObYZgAAAAFiS0dEBI9o2VEAAAAHdElNRQfiBBMBJCt84jxJAAAA5UlEQVQ4y62TyxHCIBCGoYQFGghJASBagJEGMk6sxbsXW/Dq0SpNsuSxPEad8ePGNz9kNwtjExwobEZoApiwz+l+tQjlCTAL3kYnfSFqt6KI6FeouJTFGQ86JKLDi2PR9x3WkIjrfeSWCuxWnQrsyumPwpVEUnlZhNamotTE38VmpohotkMyCGfywyChzgsrZHZyJVQomKNYASggpkLBfQwEEd09zugn8XguL2NArOI1i2m4dx+PUjoVJhvQFgON9GS1lcXAcU+XBlcIQBzwIVD4pPD8VdpBbHmmCJP/FyHApIvBwBu9bp7SZvn+ewAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNC0xOVQwMTozNjo0My0wNDowMNV8Hl4AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDQtMTlUMDE6MzY6NDMtMDQ6MDCkIabiAAAAAElFTkSuQmCC"
+                    class="small-bio-icon">
+                <div>
+                    Biography
+                </div>
+                <button class="close-button1">
+                    <div>
+                        x
+                    </div>
+                </button>
+            </nav>
+        </header>
+
+
+        <div class="scroll-object">
+            <img src="img/berkeley.JPG" class="me">
+            <div style="display: flex; flex-direction: row; align-self: center;">
+                <p style="align-self: center; color: rgb(88, 87, 87);">Berkeley</p>
+            </div>
+            <h1 style="margin-bottom: 0px; margin-top: 10px;">Ulysses Mendez 🧸</h1>
+            <p style="color: gray">Los Angeles 📍</p>
+            <div class="langs">
+                <img src="https://img.shields.io/badge/-Python-blue">
+                <img src="https://img.shields.io/badge/-Javascript-yellow">
+                <img src="https://img.shields.io/badge/-Java-red">
+                <img src="https://img.shields.io/badge/-HTML%2FCSS-green">
+                <img src="https://img.shields.io/badge/-SQL-purple">
+
+            </div>
+            <h2>About Me 🌴</h2>
+            <p style="line-height: 1.5; margin-top: -10px;">
+                Hello! I’m Ulysses, originally from Los Angeles, California, and a graduate of
+                the University of California Berkeley with a degree in Data Science.
+                My journey into programming has always been about more than learning how to write code, it’s about using
+                technology as a tool to push beyond limitations and create meaningful impact.
+                As a Zapotec Indigenous individual, I’ve often navigated societal expectations and structural
+                barriers. These obstacles motivate me to grow, challenge myself, and contribute
+                back to my community. Programming gives me the ability to do just that. I can
+                build, analyze, and create solutions.
+                I am driven by the belief that technology can be a powerful tool
+                for both my personal growth and collective progress for my community.
+            </p>
+            <img src="img/culture.JPG" class="cultureImage">
+            <p style="align-self: center; color: rgb(88, 87, 87);">Me in costume for a traditional dance 🕺🏽</p>
+            <h2>Sobre Mi 🇲🇽</h2>
+            <p style="line-height: 1.5; margin-top: -10px;">
+                ¡Hola! Soy Ulysses, originario de Los Ángeles, California, y graduado
+                de la Universidad de California, Berkeley, con una licenciatura en Ciencia
+                de Datos. Mi camino en la programación siempre ha sido más que aprender a
+                escribir código; se trata de usar la tecnología como una herramienta para superar
+                limitaciones y generar un impacto significativo.
+
+                Como persona indígena zapoteca, a menudo he tenido que navegar expectativas sociales
+                y barreras estructurales. Estos obstáculos me motivan a crecer, desafiarme a mí mismo y contribuir
+                de vuelta a mi comunidad. La programación me brinda la capacidad de hacer justamente eso: construir,
+                analizar y crear soluciones. Estoy impulsado por la convicción de que la tecnología puede ser una
+                herramienta poderosa tanto para mi crecimiento personal como para el progreso colectivo de mi comunidad.
+            </p>
+        </div>
+    </div>
+
+    <!--Layout for the Resume window-->
+    <div class="res-popup" id="res-popup">
+        <header class="h2">
+            <nav class="top-bar2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEUAAACGhoYiIiL/+/DAwMD4+PiAgAD//5nMzGaZmQDn59YAM5mgoKQAMzMAAAD/zJkICAgzMwD///8PLrXJAAAAAXRSTlMAQObYZgAAAAFiS0dEEnu8bAAAAAAHdElNRQfiBhgXAzXpQrjsAAABbklEQVRIx8WU63KFIAyEtVoj1rr1/V+2QAImXBztn64zRxz3I5vgnGH4N40fL/3T/IoYp+kVMX5Or4iw/xsi+W+J5dLlvyEWSlq1v0t4/8py1t8hav/2dUsstX/XNbi3BtD0B8L5l8t3BRi/ClUTDBT+XTElEYGGf7c1LFD6NxssEAZw48YKVvHP8hTlCQ24cWZ5G//kRVQkBHBPxEQE3PRAxMTBAHUFucH3yDV6AOwahAjEGhUAY+QbYRXipxcJKlG4bgGwNZfwF5DbtgCKFTIWgJsxXQ3IImRifwlkX3pKodx8nAWAEpMJxZOAO86zrgANQvXtK5wtwA6HJBC4CQHamVISNdkGoF7n/LwCagD5eNMwoQ+OehXSvqZhGykT0K2wn/stIjUHm4tAl1AAVBNpAR6TxCqA8pujnIXNpAEhQOYLJb07oQDyB5fTX/mlRq9CagN6otQA9GlRmmbam58v4NmfmVPAcD7S8Bf9AlndNmHeYjB7AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA2LTI0VDIzOjAzOjUzLTA0OjAwyUvdTwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNi0yNFQyMzowMzo1My0wNDowMLgWZfMAAAAASUVORK5CYII="
+                    class="small-res-icon">
+                <div>
+                    Resume
+                </div>
+                <button class="close-button2">
+                    <div>
+                        x
+                    </div>
+                </button>
+            </nav>
+        </header>
+        <img src="img/Ulysses_Mendez_Resume.jpg" class="myPDF">
+    </div>
+
+    <!--Layout for the Projects window-->
+    <!-- <div class="proj-popup" id="proj-popup">
+        <header class="h1">
+            <nav class="top-bar">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAElBMVEUAAACAgAD////AwMAAAACAgIDZyOg/AAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAHdElNRQfiBBMBIA8kjR2cAAAA1UlEQVQ4y+2UMRKDIBBFdSbpg8gBspgDELAX8QLi5P5XybJIxrixTKq8AoQ/D3+BVtUvEQTfr4G4sKCxxJUJ2k2INQMLaCfw4HEQnC0PqGYEl6Zg/Kt2ncr0ADrgHEygcj2KMj3EDsBtg7aqyYRlBO09HkVLiYHQSLyBA+jdfcVjIBEFEfSoow4y06m2aowxKOArsIAzmW4mIwnYKqZm2VDZIAFoWBVBhrJLakiDDRtjFjuKIe2OYkjzjhXF4KytOH/ju8ZwYLTlm9yDd/o0feKn/wvOExmscYTsWwZCAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA0LTE5VDAxOjMyOjE1LTA0OjAw96eFegAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNC0xOVQwMTozMjoxNS0wNDowMIb6PcYAAAAASUVORK5CYII="
+                    class="small-proj-icon">
+                <div>
+                    Projects
+                </div>
+                <button class="close-button3">
+                    <div>
+                        x
+                    </div>
+                </button>
+            </nav>
+        </header>
+        <div class="scroll-object">
+            <div style="display: flex; flex-direction: row; gap: 10px">
+                <img src="img/grandma.JPG" class="grandma">
+                <div>
+                    <h2 style="margin-top: 10px">The Indigenous people of Matatlán, Oaxacá 🛖</h2>
+                    <p style="line-height: 1.5; margin-top: -10px;">
+                        The two women in the picture are my two grandmas conversing with each other.
+                        They both come from a pueblo in the valley of Oaxacá México, the land of the
+                        Zapotec indigenous people. My grandma, the one sitting, is older than my other grandma
+                        by 10 years. Being a decade older, she comes from a generation that comes slightly
+                        before those who were able to learn Spanish; like the grandma standing up.
+                        The native language of this region is Zapoteco. Thus, my grandma is helping my other grandma
+                        translate my spanish to Zapoteco so she can understand.
+                    </p>
+                </div>
+            </div>
+            <h1 style="margin-top: -5px;">Zapoteco Translator Outline 📱</h2>
+                <p style="line-height: 1.5; margin-top: -10px;">
+                    The Zapoteco translator's purpose is to help overcome and learn that langauge/culture barrier.
+                </p>
+                <h2>Phase I</h2>
+                <p style="line-height: 1.5; margin-top: -10px;">
+                    Currently in the first phase, I am documenting basic Zapoteco words along with both their English
+                    and Spanish translation.
+                </p>
+                <h2>Phase II</h2>
+                <p style="line-height: 1.5; margin-top: -10px;">
+                </p>
+        </div>
+    </div> -->
+
+    <!--Layout for BYOW-->
+
+    <div class="byow-popup" id="byow-popup">
+        <header class="h1">
+            <nav class="top-bar">
+                <img src="img/byowEx.png" class="small-dun-icon">
+                <div>
+                    Build Your Own World
+                </div>
+                <button class="close-button3">
+                    <div>
+                        x
+                    </div>
+                </button>
+            </nav>
+        </header>
+
+        <div class="scroll-object">
+            <div style="display: flex; flex-direction: column; gap: 10px">
+                <img src="img/byowEx.png" class="examples">
+                <div>
+
+                    <h2 style="margin-top: 10px">
+                        (Build Your Own World) - World Generation System
+                    </h2>
+
+                    <img src="https://img.shields.io/badge/-Java-red">
+
+                    <h3>Overview</h3>
+                    <p style="line-height: 1.5;">
+                        BYOW focuses on generating
+                        interactive, tile based worlds. The project emphasizes algorithmic design,
+                        deterministic randomness, and state management.
+                    </p>
+
+                    <h3>Problem</h3>
+                    <p style="line-height: 1.5;">
+                        World generation for real world games requires balancing randomness with structure.
+                        These random worlds, like dungeon type games, must feel varied while remaining navigable.
+                        They must also be reproducible and logically
+                        consistent for the players. Managing player interaction, rendering, and game state adds
+                        complexity as these worlds grow in size.
+                    </p>
+
+                    <h3>Solution</h3>
+                    <p style="line-height: 1.5;">
+                        I designed a system that generates a variety of unique worlds using seeded
+                        randomness, ensuring the same input seed always produces the same world.
+                        The world consists of rooms, hallways, paths, keys, and walls allowing players
+                        to explore and interact with the environment in real time.
+                    </p>
+
+                    <h3>World Generation</h3>
+                    <p style="line-height: 1.5;">
+                        The world generation logic constructs rooms and connects them with hallways
+                        without overlapping pathways and unreachable areas through the use of walls.
+                        Deterministic random seeds are used to maintain reproducibility,
+                        which is essential for debugging and testing.
+                    </p>
+
+                    <h3>System Design</h3>
+                    <p style="line-height: 1.5;">
+                        BYOW is organized into components that separate world generation, player state, and 
+                        input handling. The world is generated on a two dimensional tile grid using deterministic 
+                        randomness using a unique seed, ensuring the same seed always produces the same layout.
+                        Rooms, hallways, and walkable tiles are generated first, after which the avatar is placed 
+                        on a valid floor tile. Player movement updates the avatar’s position only when the destination tile is 
+                        reachable, keeping world state and rendering consistent.
+                        Keyboard input is handled independently, allowing the same system to support both live
+                        input and scripted commands for testing.
+                    </p>
+
+                    <h3>What I Learned</h3>
+                    <p style="line-height: 1.5;">
+                        This project strengthened my knowledge and understandability about large systems
+                        involving randomness, state, and interaction. It also reinforced the importance
+                        of reproducibility and modular design.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Layout for WordNet-->
+    <div class="wordnet-popup" id="wordnet-popup">
+        <header class="h2">
+            <nav class="top-bar2">
+                <img src="img/word.jpg" class="small-word-icon">
+                <div>
+                    NGordnet
+                </div>
+                <button class="close-button4">
+                    <div>
+                        x
+                    </div>
+                </button>
+            </nav>
+        </header>
+
+        <div class="scroll-object">
+            <div style="display: flex; flex-direction: column; gap: 10px">
+                <img src="img/wordEx.png" class="examples">
+                <div>
+
+                    <h2 style="margin-top: 10px">
+                        NGordnet — Text Data Analysis System
+                    </h2>
+
+                    <img src="https://img.shields.io/badge/-Python-blue">
+
+                    <h3>Overview</h3>
+                    <p style="line-height: 1.5;">
+                        NGordnet is a data driven text analysis system inspired by Google’s Ngram Viewer.
+                        The project focuses on exploring word usage trends over time by
+                        processing and querying large textual datasets.
+                    </p>
+
+                    <h3>Problem</h3>
+                    <p style="line-height: 1.5;">
+                        Analyzing word trends across decades requires working with large datasets
+                        while supporting fast and flexible queries. Naive implementations struggle
+                        with performance and scalability when repeatedly comparing complex word frequencies
+                        over time.
+                    </p>
+
+                    <h3>Solution</h3>
+                    <p style="line-height: 1.5;">
+                        NGordnet organizes the mess that comes with textual data into efficient data structures that
+                        allow users to query the usage of words over time, compare multiple terms, and analyze different
+                        trends.
+                    </p>
+
+                    <h3>System Design</h3>
+                    <p style="line-height: 1.5;">
+                        The NGordnet backend separates data 
+                        storage, processing, and querying. The word data is loaded once at startup and 
+                        stored in maps that associate each word with a time ordered series of yearly counts,
+                        alongside a separate series tracking total word usage per year. A central API layer 
+                        provides methods to retrieve counts, compute frequencies, combine multiple 
+                        words, and restrict results to specific year ranges. Finally, user requests
+                        are translated to API calls that result in a visual graph for the user.
+                    </p>
+                    <h3>Data Structures & Algorithms</h3>
+                    <p style="line-height: 1.5;">
+                        NGordnet uses hash maps and tree based structures to associate words with
+                        time series frequency data. These type of structures enable efficient range queries,
+                        aggregation, and comparison operations.
+                    </p>
+
+                    <h3>Applications & Use Cases</h3>
+                    <p style="line-height: 1.5;">
+                        The system supports comparing word popularity over time,
+                        identifying historical word trends, and spotting out frequency
+                        changes across time. This system showcases real world
+                        workflows used in linguistic problems.
+                    </p>
+
+                    <h3>What I Learned</h3>
+                    <p style="line-height: 1.5;">
+                        This project strengthened my understanding of system design and
+                        data structure selection. It also reinforced the importance of
+                        designing APIs around real search processing rather than only storing raw data.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Layout for ParkSpace-->
+    <div class="park-popup" id="park-popup">
+        <header class="h2">
+            <nav class="top-bar2">
+                <img src="img/CarIcon.jpg" class="small-park-icon">
+                <div>
+                    ParkSpace
+                </div>
+                <button class="close-button5">
+                    <div>
+                        x
+                    </div>
+                </button>
+            </nav>
+        </header>
+
+        <div class="scroll-object">
+            <div style="display: flex; flex-direction: row; gap: 10px">
+                <img src="">
+                <div>
+
+                    <h2 style="margin-top: 10px">
+                        ParkSpace - Full Stack Location Based Parking Platform
+                    </h2>
+
+                    <img src="https://img.shields.io/badge/-Javascript-yellow">
+                    <img src="https://img.shields.io/badge/-HTML%2FCSS-green">
+                    <img src="https://img.shields.io/badge/-JSON-purple">
+
+                    <h3>Overview</h3>
+                    <p style="line-height: 1.5;">
+                        ParkSpace is a full stack web application designed to address the problem
+                        of finding available parking spaces in dense urban environments. Instead of treating parking as
+                        a list of spaces, my platform models parking availability as a location aware
+                        resource that users can explore visually through an interactive map interface. I hope to
+                        set it apart from current parking app experiences.
+                    </p>
+
+                    <h3>Problem</h3>
+                    <p style="line-height: 1.5;">
+                        Finding parking in cities is often time consuming and fragmented across
+                        different platforms. Many existing solutions lack real time context,
+                        intuitive visual search, or the flexibility for individuals to list
+                        private or informal parking spaces.
+                    </p>
+
+                    <h3>Solution</h3>
+                    <p style="line-height: 1.5;">
+                        ParkSpace enables users to discover and list parking spaces based on proximity
+                        and real time location. Users can search for nearby parking, view
+                        available listings directly on a map, and interact with results
+                        that update as the map view changes.
+                    </p>
+
+                    <h3>Frontend Architecture</h3>
+                    <p style="line-height: 1.5;">
+                        The frontend is built with React and Javascript using a component based
+                        architecture. The interface manages complex UI state, asynchronous data
+                        fetching, and map driven interactions.
+                    </p>
+
+                    <h3>Backend & Data</h3>
+                    <p style="line-height: 1.5;">
+                        The backend uses Node.js and Express to expose RESTful APIs responsible for
+                        listing creation, validation, and querying. MongoDB is used to store parking
+                        listings with flexible schemas well suited for location based data. I also
+                        integrated firebase authentication to securely manage user accounts, handling 
+                        signup, login, and session state.”
+                    </p>
+
+                    <h3>Future Work</h3>
+                    <p style="line-height: 1.5;">
+                        ParkSpace was designed with scalability and extensibility in mind. Planned
+                        improvements include user authentication, availability scheduling, pricing
+                        logic, and analytics to better understand usage patterns and demand across
+                        different locations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Layout for Sheme Interpreter-->
+    <div class="scheme-popup" id="scheme-popup">
+        <header class="h2">
+            <nav class="top-bar2">
+                <img src="img/scheme.jpg" class="small-scheme-icon">
+                <div>
+                    Scheme Interpreter
+                </div>
+                <button class="close-button6">
+                    <div>
+                        x
+                    </div>
+                </button>
+            </nav>
+        </header>
+
+        <div class="scroll-object">
+            <div style="display: flex; flex-direction: column; gap: 10px">
+                <img src="img/schemeEx.png" class="examples">
+                <div>
+
+                    <h2 style="margin-top: 10px">
+                        Scheme Interpreter — Programming Language Implementation
+                    </h2>
+
+                    <img src="https://img.shields.io/badge/-Python-blue">
+
+                    <h3>Overview</h3>
+                    <p style="line-height: 1.5;">
+                        This project involved building an interpreter for a subset of the Scheme
+                        programming language. The goal was to model how such a language
+                        evaluates expressions, manages variable scope, and executes function calls
+                        using recursion.
+                    </p>
+
+                    <h3>Problem</h3>
+                    <p style="line-height: 1.5;">
+                        Interpreters must correctly handle expression evaluation, lexical scoping,
+                        and function calls.
+                        Small mistakes in evaluation order or environment handling can lead to subtle
+                        but difficult to debug errors. These topics are considered when programmers
+                        develop some new programming language.
+                    </p>
+
+                    <h3>Solution</h3>
+                    <p style="line-height: 1.5;">
+                        I implemented a recursive interpreter that evaluates Scheme expressions
+                        according to the language syntax. The system parses expressions, resolves
+                        symbols through nested environments, and runs functions using a
+                        frame based environment model.
+                    </p>
+
+                    <h3>Evaluation Model</h3>
+                    <p style="line-height: 1.5;">
+                        The interpreter uses recursive evaluation in which expressions
+                        are evaluated based on their type symbols, literals, procedure calls, or
+                        special forms. Each function call creates a new environment frame that connects it
+                        back to the original scope.
+                    </p>
+
+                    <h3>Environment & Scoping</h3>
+                    <p style="line-height: 1.5;">
+                        Variable bindings are managed using chained environment frames, allowing
+                        the interpreter to resolve symbols correctly across nested scopes.
+                        This design enforces lexical scoping rules and ensures predictable
+                        behavior during function evaluation and recursion.
+                    </p>
+
+                    <h3>System Design</h3>
+                    <p style="line-height: 1.5;">
+                        The interpreter is organized into components responsible for parsing,
+                        evaluation, and environment management. This separation of concerns makes
+                        the system easier to reason about, extend, and debug as additional language
+                        features are introduced.
+                    </p>
+
+                    <h3>What I Learned</h3>
+                    <p style="line-height: 1.5;">
+                        This project deepened my understanding of how programming languages can work
+                        internally. In this case it showcases particularly how recursion, abstraction, and scoping are able to interact
+                        during execution. It also strengthened my ability to reason about complex
+                        systems where correctness depends on precise control and system management.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Layout for the start menu-->
+    <div class="start-menu" id="startDiv">
+        <div class="side-bar">
+            <img src="data:image/png;base64,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"
+                class="sb-icon">
+        </div>
+        <div class="menuOptions">
+            <a href="https://www.linkedin.com/in/ulysses-mendez-554608391/" style="text-decoration: none;"
+                target="_blank">
+                <button class="menuButtons">
+                    <img src="img/linkpixel.webp"
+                        class="linkIcon">
+                    <p>Linkedin</p>
+                </button>
+            </a>
+            <a href="https://github.com/ulyssesmendez-creator" style="text-decoration: none;" target="_blank">
+                <button class="menuButtons">
+                    <img src="img/github.svg"
+                        class="gitIcon">
+                    <p>GitHub</p>
+                </button>
+            </a>
+            <a href="pdf/Ulysses_Mendez_Resume.pdf" download style="text-decoration: none;" target="_blank">
+                <button class="menuButtons">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEUAAACGhoYiIiL/+/DAwMD4+PiAgAD//5nMzGaZmQDn59YAM5mgoKQAMzMAAAD/zJkICAgzMwD///8PLrXJAAAAAXRSTlMAQObYZgAAAAFiS0dEEnu8bAAAAAAHdElNRQfiBhgXAzXpQrjsAAABbklEQVRIx8WU63KFIAyEtVoj1rr1/V+2QAImXBztn64zRxz3I5vgnGH4N40fL/3T/IoYp+kVMX5Or4iw/xsi+W+J5dLlvyEWSlq1v0t4/8py1t8hav/2dUsstX/XNbi3BtD0B8L5l8t3BRi/ClUTDBT+XTElEYGGf7c1LFD6NxssEAZw48YKVvHP8hTlCQ24cWZ5G//kRVQkBHBPxEQE3PRAxMTBAHUFucH3yDV6AOwahAjEGhUAY+QbYRXipxcJKlG4bgGwNZfwF5DbtgCKFTIWgJsxXQ3IImRifwlkX3pKodx8nAWAEpMJxZOAO86zrgANQvXtK5wtwA6HJBC4CQHamVISNdkGoF7n/LwCagD5eNMwoQ+OehXSvqZhGykT0K2wn/stIjUHm4tAl1AAVBNpAR6TxCqA8pujnIXNpAEhQOYLJb07oQDyB5fTX/mlRq9CagN6otQA9GlRmmbam58v4NmfmVPAcD7S8Bf9AlndNmHeYjB7AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA2LTI0VDIzOjAzOjUzLTA0OjAwyUvdTwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNi0yNFQyMzowMzo1My0wNDowMLgWZfMAAAAASUVORK5CYII="
+                        class="menuRes">
+                    <p>Resume</p>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <!--Displays real time to the user-->
+    <script>
+        let time = document.getElementById("current-time");
+        setInterval(() => {
+            let d = new Date();
+            time.innerHTML = d.toLocaleTimeString();
+        }, 1000)
+    </script>
+
+    <!--Allows user to open and exit out of windows-->
+    <script>
+        let bio = document.querySelector('.bio-popup')
+        let res = document.querySelector('.res-popup')
+        let byow = document.querySelector('.byow-popup')
+        let word = document.querySelector('.wordnet-popup')
+        let park = document.querySelector('.park-popup')
+        let scheme = document.querySelector('.scheme-popup')
+        let openBio = document.querySelector('.Bio')
+        let closeBio = document.querySelector('.close-button1')
+        let openRes = document.querySelector('.Resume')
+        let closeRes = document.querySelector('.close-button2')
+        let openByow = document.querySelector('.Byow')
+        let closeByow = document.querySelector('.close-button3')
+        let openMenu = document.querySelector('.start-button')
+        let openWord = document.querySelector('.WordNet')
+        let closeWord = document.querySelector('.close-button4')
+        let openPark = document.querySelector('.ParkSpace')
+        let closePark = document.querySelector('.close-button5')
+        let openScheme = document.querySelector('.Scheme')
+        let closeScheme = document.querySelector('.close-button6')
+        let menu = document.querySelector('.start-menu')
+        let maxZIndex = 99;
+
+        openMenu.onclick = () => {
+            menu.style.display = 'flex';
+
+        }
+
+        openBio.onclick = () => {
+            dragElement(document.getElementById("bio-popup"));
+            bio.style.zIndex = maxZIndex;
+            maxZIndex += 1;
+            bio.style.display = 'block';
+            bio.style.left = `${78}px`;
+            bio.style.top = `${35}px`;
+        }
+
+        closeBio.onclick = () => {
+            bio.style.display = 'none';
+        }
+
+        openRes.onclick = () => {
+            dragElement(document.getElementById("res-popup"));
+            res.style.zIndex = maxZIndex;
+            maxZIndex += 1;
+            res.style.display = 'block';
+            res.style.left = `${238}px`;
+            res.style.top = `${25}px`;
+        }
+
+        closeRes.onclick = () => {
+            res.style.display = 'none';
+        }
+
+        openWord.onclick = () => {
+            dragElement(document.getElementById("wordnet-popup"));
+            word.style.zIndex = maxZIndex;
+            maxZIndex += 1;
+            word.style.display = 'block';
+            word.style.left = `${558}px`;
+            word.style.top = `${15}px`;
+        }
+
+        closeWord.onclick = () => {
+            word.style.display = 'none';
+        }
+
+        openPark.onclick = () => {
+            dragElement(document.getElementById("park-popup"));
+            park.style.zIndex = maxZIndex;
+            maxZIndex += 1;
+            park.style.display = 'block';
+            park.style.left = `${658}px`;
+            park.style.top = `${15}px`;
+        }
+
+        closePark.onclick = () => {
+            park.style.display = 'none';
+        }
+
+        openScheme.onclick = () => {
+            dragElement(document.getElementById("scheme-popup"));
+            scheme.style.zIndex = maxZIndex;
+            maxZIndex += 1;
+            scheme.style.display = 'block';
+            scheme.style.left = `${758}px`;
+            scheme.style.top = `${15}px`;
+        }
+
+        closeScheme.onclick = () => {
+            scheme.style.display = 'none';
+        }
+
+        openByow.onclick = () => {
+            dragElement(document.getElementById("byow-popup"));
+            byow.style.zIndex = maxZIndex;
+            maxZIndex += 1;
+            byow.style.display = 'block';
+            byow.style.left = `${758}px`;
+            byow.style.top = `${15}px`;
+        }
+
+        closeByow.onclick = () => {
+            byow.style.display = 'none';
+        }
+    </script>
+
+    <!--Allows the user to exit out the start menu-->
+    <script>
+        document.addEventListener(
+            "click",
+            function (event) {
+                // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
+                if (!event.target.closest(".start-button")) {
+                    closeModal()
+                }
+            },
+            false
+        )
+        function closeModal() {
+            document.querySelector(".start-menu").style.display = "none"
+        }
+    </script>
+
+    <!--Allows user to drag windows across the screen-->
+    <script>
+        dragElement(document.getElementById("bio-popup"));
+
+        function dragElement(elmnt) {
+            var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+            if (document.getElementById(elmnt.id + "header")) {
+                // if present, the header is where you move the DIV from:
+                document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+            } else {
+                // otherwise, move the DIV from anywhere inside the DIV:
+                elmnt.onmousedown = dragMouseDown;
+            }
+
+            function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // get the mouse cursor position at startup:
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                // call a function whenever the cursor moves:
+                document.onmousemove = elementDrag;
+            }
+
+            function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // calculate the new cursor position:
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                // set the element's new position:
+                elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+            }
+
+            function closeDragElement() {
+                // stop moving when the mouse button is released:
+                if (elmnt.offsetTop < 0) {
+                    elmnt.style.top = "0px";
+                }
+                if (elmnt.offsetLeft < 0) {
+                    elmnt.style.left = "0px";
+                }
+                if (elmnt.offsetTop + elmnt.offsetHeight > window.innerHeight) {
+                    elmnt.style.top = (window.innerHeight - elmnt.offsetHeight) + "px";
+                }
+                if (elmnt.offsetLeft + elmnt.offsetWidth > window.innerWidth) {
+                    elmnt.style.left = (window.innerWidth - elmnt.offsetWidth) + "px";
+                }
+                document.onmouseup = null;
+                document.onmousemove = null;
+            }
+        }
+    </script>
+
+    <!--Allows the windows to be forced to the front for the viewer to see-->
+    <script>
+        bio.addEventListener("mousedown", () => {
+            dragElement(document.getElementById("bio-popup"));
+            bio.style.zIndex = maxZIndex;
+            maxZIndex += 1;
+        });
+
+        res.addEventListener("mousedown", () => {
+            dragElement(document.getElementById("res-popup"));
+            res.style.zIndex = maxZIndex;
+            maxZIndex += 1;
+        });
+
+        byow.addEventListener("mousedown", () => {
+            dragElement(document.getElementById("byow-popup"));
+            byow.style.zIndex = maxZIndex;
+            maxZIndex += 1;
+            byow.classList.add("active");
+        });
+
+        word.addEventListener("mousedown", () => {
+            dragElement(document.getElementById("wordnet-popup"));
+            word.style.zIndex = maxZIndex;
+            maxZIndex += 1;
+            word.classList.add("active");
+        });
+
+        park.addEventListener("mousedown", () => {
+            dragElement(document.getElementById("park-popup"));
+            park.style.zIndex = maxZIndex;
+            maxZIndex += 1;
+            park.classList.add("active");
+        });
+
+        scheme.addEventListener("mousedown", () => {
+            dragElement(document.getElementById("scheme-popup"));
+            scheme.style.zIndex = maxZIndex;
+            maxZIndex += 1;
+            scheme.classList.add("active");
+        });
+    </script>
+
+</body>
+
+</html>
